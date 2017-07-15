@@ -1,0 +1,41 @@
+<!doctype html>
+
+<!-- angular directive -->
+<html ng-app='store'> 
+
+<head>
+	<meta charset="utf-8">
+	<title>angular testing</title>
+	<!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/sasstyle.css">
+
+	<style type="text/css">
+		body {
+			/*background: steelblue;*/
+			font-size: 150%;
+			/*color: black;*/
+		}
+	</style>
+</head>
+
+<body>
+	<!-- angular controller -->
+<div ng-controller='StoreController as store'>
+		<div ng-repeat="product in store.products | orderBy:'-price'"
+					 ng-hide='product.soldOut'>
+
+		<!-- <div ng-hide='product.soldOut'> -->
+			<h3> {{ product.name }} </h3>
+			<h5> {{ product.price | currency }}</h5>
+			<p> {{ product.description }} </p>
+			<button ng-show='product.canPurchase'> Add to Cart </button>
+		<!-- </div> -->
+		</div>
+	</div>
+
+	<script src="libs/angular.min.js"></script>
+	<!-- call angular module -->
+	<script src="app.js"></script>
+
+</body>
+</html>
