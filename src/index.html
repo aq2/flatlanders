@@ -6,23 +6,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>angular testing</title>
-	<!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="style.css">
-
-	<style type="text/css">
-		body {
-			/*background: steelblue;*/
-			font-size: 150%;
-			/*color: black;*/
-		}
-	</style>
 </head>
 
 <body>
-
-<h1>sausage</h1>
+	<h1>sausage</h1>
 	<!-- angular controller -->
-<div ng-controller='StoreController as store'>
+	<div ng-controller='StoreController as store'>
 		<div ng-repeat="product in store.products | orderBy:'-price'"
 					 ng-hide='product.soldOut'>
 

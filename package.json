@@ -1,8 +1,8 @@
 {
   "name": "flatlanders",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "learn angular and gulp, gulp",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,13 +12,10 @@
   },
   "author": "angelo",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aq2/flatlanders/issues"
-  },
-  "homepage": "https://github.com/aq2/flatlanders#readme",
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
+    "gulp-changed": "^3.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-stylus": "^2.6.0"
   }
