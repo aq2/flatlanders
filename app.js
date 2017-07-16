@@ -5,18 +5,6 @@
     this.products = gems
   })
 
-  const ginge = 5
-  var teeth = 'gorilla'
-  var lemon = teeth + ginge
-  // teeth = lemon
-
-  // fixme this isn't working
-
-  // todo this needs to be done
-
-  // here is more stuff
-
-  // aq oh noes
 
   var gems = [
     {
