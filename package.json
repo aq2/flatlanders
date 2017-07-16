@@ -20,9 +20,6 @@
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.1.0",
-    "gulp-stylus": "^2.6.0",
-    "gulp-util": "^3.0.8",
-    "lame": "^1.2.4",
-    "stylus": "^0.54.5"
+    "gulp-stylus": "^2.6.0"
   }
 }

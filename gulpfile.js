@@ -1,14 +1,12 @@
 /* File: gulpfile.js */
 
-// grab our gulp packages
 const gulp  = require('gulp'),
       stylus = require('gulp-stylus'),
       browserSync = require('browser-sync').create(),
       plumber = require('gulp-plumber'),
-      exec = require('child_process').exec;
+      exec = require('child_process').exec
 
-const onError = function (err) {
-  // gutil.beep()
+var onError = function (err) {
   console.log()
   console.log("** ERROR **, probably in stylus")
   beep()
@@ -20,7 +18,7 @@ function beep(){
 
 gulp.task('styles', function() {
   return gulp.src('./stylus/*.styl')
-    .pipe(plumber({ errorHandler: onError}))
+    .pipe(plumber({ errorHandler: onError }))
     .pipe(stylus())
     .pipe(gulp.dest('./'))
     .pipe(browserSync.stream())
